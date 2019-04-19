@@ -1,0 +1,25 @@
+
+server:
+  port: 29001
+
+spring:
+  application:
+    name: sapo-sync
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: sapodemo
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+sapo:
+  limit: 250
+  client:
+    client_id: cab6af39ca1a423286323ddc654626aa
+    client_secret: b645e7b7107c4ed691ab8b67113ac600
+  security:
+    store: nttcn201.bizwebvietnam.net
+    code: 7059816521a1410dac6ca809d3a919b1
+    hmac: zNafA+rv3Ms6vtvrhxlKVb7vk1sX7rIUrj3uc3j2T+o=
+    access_token: d50a63f29eab4cabbe564093b8f5cb10
